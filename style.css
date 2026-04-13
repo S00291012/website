@@ -1,0 +1,110 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: white; /* fallback color */
+	color: black;
+	text-align: center;
+}
+
+body.contact {
+	background-image: url('img/cr7.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white; /* white text on contact page */
+	position: relative;
+}
+
+body.contact::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 0;
+	pointer-events: none;
+}
+
+body.contact nav,
+body.contact .container {
+	position: relative;
+	z-index: 1;
+}
+
+nav {
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+nav a {
+	color: white;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.container {
+	padding: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.fix {
+	width: 200px;
+	height: auto;
+	position: fixed;
+	top: 80px;
+	right: 10px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.history {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.history h2 {
+	font-size: 40px;
+}
+
+.history p {
+	font-size: 20px;
+}
+
+.store {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+}
+
+.team-section {
+	margin-bottom: 30px;
+}
+
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.player {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 15px;
+	width: 250px;
+	text-align: center;
+}
